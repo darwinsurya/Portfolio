@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darwin K | Software Developer Portfolio</title>
+  
+  <!-- Custom Favicon Logo -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <meta name="description" content="Explore Darwin K's software developer portfolio, highlighting database integrations, system automation, and responsive web applications.">
+  <meta name="keywords" content="Portfolio, Software Developer, Java, JavaScript, Python, OCI Generative AI, Darwin K">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Topography Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="main-header">
+    <div class="nav-container">
+      <div class="logo">
+        <button class="logo-link nav-btn" data-target="home" style="background:none; border:none; padding:0; cursor:pointer;">Darwin K.</button>
+      </div>
+      <nav class="nav-links" id="nav-menu">
+        <button class="nav-link nav-btn active" data-target="home">Home</button>
+        <button class="nav-link nav-btn" data-target="projects">Projects</button>
+        <button class="nav-link nav-btn" data-target="resume">Resume</button>
+        <button class="nav-link nav-btn" data-target="about">About me</button>
+        <a href="mailto:ds6panimalar@gmail.com" class="btn btn-nav-cta">Email me</a>
+      </nav>
+      
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="view-container">
+
+    <!-- ==========================================
+         1. HOME VIEW SECTION
+         ========================================== -->
+    <div id="home-view" class="view-section active">
+      <!-- Hero Section -->
+      <section class="section section-hero">
+        <div class="container hero-layout">
+          <div class="hero-avatar-wrapper">
+            <img src="darwin_avatar.jpeg" alt="Darwin K Avatar" class="hero-avatar">
+          </div>
+          <h1 class="hero-heading">
+            Hey there, I'm Darwin. I build websites, write backend code, and configure secure systems.
+          </h1>
+          <div class="hero-social-links">
+            <a href="https://linkedin.com/in/darwin-surya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/darwinsurya" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:ds6panimalar@gmail.com">Email</a>
+            <a href="tel:+917305169046">Phone</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- What I Do (Core Competencies) Section -->
+      <section class="section section-competencies" style="background: var(--bg-card); border-top: var(--border-thin); border-bottom: var(--border-thin); padding: 80px 0;">
+        <div class="container">
+          <div class="section-title-block reveal-on-scroll">
+            <h2 class="section-title">What I do</h2>
+            <p class="section-subtitle">A breakdown of my day-to-day work, engineering focus areas, and technical interests.</p>
+          </div>
+          
+          <div class="competencies-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+            <!-- Comp 1 -->
+            <div class="comp-card reveal-on-scroll" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h3 style="font-family: var(--font-headings); font-size: 1.25rem; margin-bottom: 12px;">Frontend Crafting</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                Building responsive, intuitive interfaces using modern HTML5, CSS3, and JavaScript logic. I focus on cross-browser performance, semantic layouts, and pixel-perfect rendering across devices.
+              </p>
+            </div>
+            <!-- Comp 2 -->
+            <div class="comp-card reveal-on-scroll reveal-delay-1" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h3 style="font-family: var(--font-headings); font-size: 1.25rem; margin-bottom: 12px;">Backend & Automation</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                Designing stable backend logic structures, parsing code schemas, and database calls in Java and Python. I write shell automation scripts and manage configuration setups in Linux/Unix environments.
+              </p>
+            </div>
+            <!-- Comp 3 -->
+            <div class="comp-card reveal-on-scroll reveal-delay-2" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h3 style="font-family: var(--font-headings); font-size: 1.25rem; margin-bottom: 12px;">Cloud AI Engineering</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                Implementing prompt templates, deploying workflow patterns, and creating custom semantic setups. Certified as an OCI Generative AI Professional and Microsoft Azure Fundamentals prep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skillset Section -->
+      <section class="section section-skills" id="skills-section" style="border-bottom: var(--border-thin);">
+        <div class="container">
+          <div class="section-title-block reveal-on-scroll">
+            <h2 class="section-title">Technical Skillset</h2>
+            <p class="section-subtitle">A visual summary of the languages, utilities, and frameworks I use to engineer responsive code and automate server operations.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1 -->
+            <div class="skill-card reveal-on-scroll">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <h3 class="skill-card-title">JavaScript & Web Frontend</h3>
+              <p class="skill-card-desc">Designing smooth layouts, custom rendering components, interactive navigations, and styling using CSS3 variables.</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-card reveal-on-scroll reveal-delay-1">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>
+              </div>
+              <h3 class="skill-card-title">Java & OOP Backend</h3>
+              <p class="skill-card-desc">Writing compiled classes, managing database integrations, structural socket connections, and optimizing server requests.</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-card reveal-on-scroll reveal-delay-2">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="5" y="5" rx="2"/><path d="M14 8h-4v8h4"/><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 16h-4"/></svg>
+              </div>
+              <h3 class="skill-card-title">Python & Logic Scripting</h3>
+              <p class="skill-card-desc">Structuring course algorithms, mathematical functions, arrays, tree iterations, and customized sorting scripts.</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-card reveal-on-scroll">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              </div>
+              <h3 class="skill-card-title">Linux Command Lines</h3>
+              <p class="skill-card-desc">Managing shell bash configurations, system scripts, directory manipulation, and automating diagnostic tools.</p>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-card reveal-on-scroll reveal-delay-1">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/><path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/></svg>
+              </div>
+              <h3 class="skill-card-title">Generative AI Engineering</h3>
+              <p class="skill-card-desc">Designing prompt chains, deploying local LLM interactions, and integrating OCI cloud models into frontend tasks.</p>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-card reveal-on-scroll reveal-delay-2">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </div>
+              <h3 class="skill-card-title">Git & Platform tools</h3>
+              <p class="skill-card-desc">Tracking codebase iterations, hosting open-source repositories, and setting up cloud workspace systems.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Projects Preview Section -->
+      <section class="section section-selected-projects" id="selected-projects-section" style="border-bottom: var(--border-thin);">
+        <div class="container">
+          <div class="section-title-block reveal-on-scroll">
+            <h2 class="section-title">Selected projects</h2>
+            <p class="section-subtitle">A look at some of the web portals and code repositories I've built, focusing on clean logic and data integrations.</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <button class="project-card nav-btn reveal-on-scroll" data-target="projects" style="background: none; border: none; text-align: left; cursor: pointer; width: 100%;">
+              <div class="project-img-wrapper img-zoom" style="width: 100%;">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&h=400&q=80" alt="ERP Assignment Module Mockup">
+              </div>
+              <h3 class="project-card-title">ERP Assignment Module</h3>
+              <p class="project-card-desc">I helped develop our university's ERP portal, building the frontend modules and backend logic that students use to upload assignments.</p>
+            </button>
+
+            <!-- Project 2 -->
+            <button class="project-card nav-btn reveal-on-scroll reveal-delay-1" data-target="projects" style="background: none; border: none; text-align: left; cursor: pointer; width: 100%;">
+              <div class="project-img-wrapper img-zoom" style="width: 100%;">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=400&q=80" alt="ERP Parent-Teacher Communications Mockup">
+              </div>
+              <h3 class="project-card-title">ERP Parent-Teacher Communications</h3>
+              <p class="project-card-desc">I worked on the parent-teacher dashboard for our college portal, making sure meetings and academic reports sync securely.</p>
+            </button>
+
+            <!-- Project 3 -->
+            <button class="project-card nav-btn reveal-on-scroll reveal-delay-2" data-target="projects" style="background: none; border: none; text-align: left; cursor: pointer; width: 100%;">
+              <div class="project-img-wrapper img-zoom" style="width: 100%;">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&h=400&q=80" alt="Responsive Web Applications Mockup">
+              </div>
+              <h3 class="project-card-title">Responsive Web Applications</h3>
+              <p class="project-card-desc">A collection of clean, responsive web projects. I enjoy tuning performance and ensuring layouts look great on every screen.</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Professional Values / Expert Feedback Section -->
+      <section class="section section-feedback" id="feedback-section">
+        <div class="container">
+          <div class="section-title-block reveal-on-scroll">
+            <h2 class="section-title">Core Strengths</h2>
+            <p class="section-subtitle">What I focus on when designing applications, managing codebase logic, and building tech.</p>
+          </div>
+
+          <div class="feedback-grid">
+            <!-- Card 1 -->
+            <div class="feedback-card reveal-on-scroll">
+              <div class="feedback-author-row">
+                <div class="feedback-author-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <div class="feedback-author-info">
+                  <h4 class="feedback-author-name">Problem Solving</h4>
+                  <p class="feedback-author-title">IEEE Award Winner</p>
+                </div>
+              </div>
+              <p class="feedback-text">"Debugging is one of my favorite parts of coding. I won 2nd prize in the IEEE Error Detection contest by digging deep into broken logic."</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feedback-card reveal-on-scroll reveal-delay-1">
+              <div class="feedback-author-row">
+                <div class="feedback-author-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="feedback-author-info">
+                  <h4 class="feedback-author-name">Code Craftsmanship</h4>
+                  <p class="feedback-author-title">Backend & Shells</p>
+                </div>
+              </div>
+              <p class="feedback-text">"I like writing code that is clean, readable, and easy to maintain. I work with JavaScript, Java, and Python, and spend a lot of time in Linux."</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feedback-card reveal-on-scroll reveal-delay-2">
+              <div class="feedback-author-row">
+                <div class="feedback-author-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div class="feedback-author-info">
+                  <h4 class="feedback-author-name">Adaptability</h4>
+                  <p class="feedback-author-title">Continuous Learning</p>
+                </div>
+              </div>
+              <p class="feedback-text">"I am always looking for new things to learn. Recently I've been focused on cloud technologies, prompt structures, and large language models."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Banner Section -->
+      <section class="section section-connect-cta">
+        <div class="container connect-cta-container">
+          <h2 class="connect-title">Interested in connecting?</h2>
+          <p class="connect-subtitle">Let's talk projects, collaborations, or anything software!</p>
+          <a href="mailto:ds6panimalar@gmail.com" class="btn btn-connect">Email me</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         2. PROJECTS VIEW SECTION
+         ========================================== -->
+    <div id="projects-view" class="view-section">
+      <section class="section section-selected-projects" id="projects-page-section">
+        <div class="container">
+          <div class="section-title-block text-left reveal-on-scroll">
+            <h1 class="hero-heading">Projects I've Built</h1>
+            <p class="section-subtitle text-left-subtitle">Here is a selection of systems and web applications I've worked on, focusing on database integration, clean UI rendering, and secure scripting.</p>
+          </div>
+
+          <div class="projects-grid-full" style="margin-bottom: 80px;">
+            <!-- Item 1 -->
+            <div class="project-item-full reveal-on-scroll">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&h=500&q=80" alt="ERP Assignment Module Mockup">
+              </div>
+              <h2 class="project-full-title">ERP Assignment Module</h2>
+              <p class="project-full-desc">I worked on our university ERP development project, building the student assignment portal and database connections. I made sure files upload reliably and teachers can search and track submissions.</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="project-item-full reveal-on-scroll reveal-delay-1">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&h=500&q=80" alt="ERP Parent-Teacher Communications Mockup">
+              </div>
+              <h2 class="project-full-title">ERP Parent-Teacher Communications</h2>
+              <p class="project-full-desc">I created communication dashboards for the parent-teacher academic review portal. I designed interfaces to show progress charts and schedule notifications securely.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="project-item-full reveal-on-scroll">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=800&h=500&q=80" alt="Responsive Web Applications Mockup">
+              </div>
+              <h2 class="project-full-title">Responsive Web Applications</h2>
+              <p class="project-full-desc">A repository of custom frontend templates, interactive components, and widget integrations. I built these to practice optimizing rendering speed and clean, accessible CSS layouts.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="project-item-full reveal-on-scroll reveal-delay-1">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&h=500&q=80" alt="IEEE Logic Debugger Mockup">
+              </div>
+              <h2 class="project-full-title">IEEE Logic Debugger Tool</h2>
+              <p class="project-full-desc">For the IEEE Error Detection Competition (where I won 2nd prize), I developed a logic utility to analyze code syntaxes, inspect stack states, and identify runtime exceptions quickly.</p>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="project-item-full reveal-on-scroll">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&h=500&q=80" alt="Hashcat Linux Cryptography Scripts Mockup">
+              </div>
+              <h2 class="project-full-title">Hashcat Linux Cryptography Scripting</h2>
+              <p class="project-full-desc">I gave a seminar presentation on Hashcat during a cybersecurity workshop. To accompany it, I wrote shell scripts to automate security scans and test password complexity rules.</p>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="project-item-full reveal-on-scroll reveal-delay-1">
+              <div class="project-img-wrapper-full img-zoom">
+                <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&h=500&q=80" alt="Data Structures Implementation Mockup">
+              </div>
+              <h2 class="project-full-title">Data Structures & Coursework Repo</h2>
+              <p class="project-full-desc">My academic collection of optimized sorting algorithms, tree structures, and server sockets. I built these during labs to understand the core mechanics of memory and computational efficiency.</p>
+            </div>
+          </div>
+
+          <!-- Development Principles -->
+          <div class="principles-block reveal-on-scroll" style="border-top: var(--border-thin); padding-top: 60px; margin-top: 60px;">
+            <h2 class="section-title">Development Values</h2>
+            <div class="principles-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 32px;">
+              <div>
+                <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.1rem; margin-bottom:8px;">1. Design for Everyone</h4>
+                <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">I build websites that look good and load fast on all devices. Accessibility and responsiveness aren't optional details—they are core goals from the first line of code.</p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.1rem; margin-bottom:8px;">2. Keep it Clean and Readable</h4>
+                <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">Writing simple, well-commented functions makes collaboration easy and saves hours of maintenance. I design databases and logic patterns to be clear and self-documenting.</p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.1rem; margin-bottom:8px;">3. Secure by Default</h4>
+                <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">Vulnerabilities are easier to prevent than to fix. I follow secure coding standards and utilize my cybersecurity training to build protection directly into server logic and parameters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Banner Section -->
+      <section class="section section-connect-cta">
+        <div class="container connect-cta-container">
+          <h2 class="connect-title">Interested in connecting?</h2>
+          <p class="connect-subtitle">Let's talk projects, collaborations, or anything software!</p>
+          <a href="mailto:ds6panimalar@gmail.com" class="btn btn-connect">Email me</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         3. RESUME & CERTIFICATIONS VIEW SECTION
+         ========================================== -->
+    <div id="resume-view" class="view-section">
+      <section class="section section-resume" id="resume-page-section">
+        <div class="container">
+          <div class="section-title-block text-left reveal-on-scroll">
+            <h1 class="hero-heading">Graduation Behind.<br>Dedication Ahead.</h1>
+            <p class="section-subtitle text-left-subtitle">Designing clean responsive front-ends, optimizing logical structures, and deploying AI workflows. I seek a developer role that challenges me and allows me to contribute to impactful software.</p>
+            <a href="darwin_resume.pdf" download="Darwin_K_Resume.pdf" class="btn btn-resume-download">Download Resume as PDF</a>
+          </div>
+
+          <div class="resume-content-layout">
+            <!-- Education Section -->
+            <div class="resume-block reveal-on-scroll">
+              <h2 class="resume-section-title">Education</h2>
+              <div class="resume-item">
+                <h3 class="resume-item-title">Bachelor of Technology in Information Technology</h3>
+                <p class="resume-item-meta">Panimalar Engineering College • Graduated 2026 • CGPA: 8.0 / 10</p>
+                <p class="resume-item-text">Acquired a strong foundation in software systems, database management, and network architectures. Core coursework includes:</p>
+                <ul class="resume-list" style="margin-top: 8px;">
+                  <li><strong>Software & Web Systems:</strong> Object-Oriented Programming in Java, HTML5, CSS3, JavaScript, and Web Development Labs.</li>
+                  <li><strong>Data & Algorithms:</strong> Design and Analysis of Algorithms, Data Structures, and Database Management Systems (SQL).</li>
+                  <li><strong>Systems & Networks:</strong> Computer Networks, Operating Systems, Linux shell scripting, and Cybersecurity workshops.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-block reveal-on-scroll">
+              <h2 class="resume-section-title">Experience</h2>
+              <div class="resume-item">
+                <h3 class="resume-item-title">Web Developer Project Work</h3>
+                <p class="resume-item-meta">Collaborative ERP & Software Program •</p>
+                <ul class="resume-list">
+                  <li>Developed dynamic and responsive web applications using JavaScript, HTML, and CSS.</li>
+                  <li>Collaborated on our university ERP development project, building the student assignment submission portal and parental communication dashboards.</li>
+                  <li>Debugged and optimized database queries and frontend rendering to ensure smooth operations.</li>
+                </ul>
+              </div>
+              
+              <div class="resume-item">
+                <h3 class="resume-item-title">Cybersecurity Technical Presenter</h3>
+                <p class="resume-item-meta">Workshop & Academic Activities</p>
+                <ul class="resume-list">
+                  <li>Delivered a detailed demonstration on the Hashcat Linux Tool, educating peers on command-line configurations and password strength testing.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-block reveal-on-scroll">
+              <h2 class="resume-section-title">Skills</h2>
+              <div class="resume-item">
+                <ul class="resume-list">
+                  <li><strong>Programming Languages & Frameworks:</strong> JavaScript, HTML5, CSS3, Java, Python, Linux.</li>
+                  <li><strong>Cloud & AI Tools:</strong> OCI Generative AI, Prompt Engineering, ChatGPT, Langchain.</li>
+                  <li><strong>Soft Skills:</strong> Analytical Problem-Solving, Team Collaboration, Adaptability.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Academic Projects Section -->
+            <div class="resume-block reveal-on-scroll">
+              <h2 class="resume-section-title">Academic Projects</h2>
+              <div class="resume-item">
+                <h3 class="resume-item-title">ERP Assignment Module & Parent Communication Module</h3>
+                <p class="resume-item-text">Streamlined assignment uploads and notifications using Java backends, database query structures, and JavaScript interfaces.</p>
+              </div>
+              <div class="resume-item">
+                <h3 class="resume-item-title">Web Development Portfolios</h3>
+                <p class="resume-item-text">Constructed user-friendly applications focusing on accessibility standards and responsive UI grid structures.</p>
+              </div>
+            </div>
+
+            <!-- Activities Section -->
+            <div class="resume-block reveal-on-scroll">
+              <h2 class="resume-section-title">Activities & Honors</h2>
+              <div class="resume-item">
+                <ul class="resume-list">
+                  <li><strong>2nd Prize in IEEE Error Detection:</strong> Recognized for outstanding performance in logical programming and code system reviews.</li>
+                  <li><strong>IEEE 24-Hour Coding Contest:</strong> Participated in a competitive coding event under strict time constraints.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Certifications block -->
+            <div class="resume-block reveal-on-scroll" id="certifications-resume-block">
+              <h2 class="resume-section-title">Professional Credentials</h2>
+              <p class="resume-block-subtitle">Click on any credential card to view the full certificate image.</p>
+              
+              <div class="certs-visual-grid">
+                <!-- Cert 1 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/oracle_generative_ai.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/oracle_generative_ai.png" alt="OCI Generative AI Certificate preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">OCI Generative AI Certified Professional</h4>
+                    <p class="cert-card-meta">Oracle University • July 2024</p>
+                  </div>
+                </div>
+                
+                <!-- Cert 2 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/nasscom_cybersecurity.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/nasscom_cybersecurity.png" alt="Cybersecurity Fundamentals Certificate preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Cybersecurity Fundamentals</h4>
+                    <p class="cert-card-meta">NASSCOM FutureSkills Prime • Dec 2023</p>
+                  </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/servicenow_micro_cert.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/servicenow_micro_cert.png" alt="ServiceNow Micro-Certification preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Welcome to ServiceNow Micro-Cert</h4>
+                    <p class="cert-card-meta">ServiceNow • June 2025</p>
+                  </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/web_dev_internship.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/web_dev_internship.png" alt="Web Development Internship Certificate preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Web Dev Internship Certificate</h4>
+                    <p class="cert-card-meta">TechnoHacks EduTech • Feb 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/infosys_data_science.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/infosys_data_science.png" alt="Introduction to Data Science preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Introduction to Data Science</h4>
+                    <p class="cert-card-meta">Infosys Springboard • Aug 2025</p>
+                  </div>
+                </div>
+
+                <!-- Cert 6 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/infosys_python.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/infosys_python.png" alt="Introduction to Python preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Introduction to Python</h4>
+                    <p class="cert-card-meta">Infosys Springboard • Aug 2025</p>
+                  </div>
+                </div>
+
+                <!-- Cert 7 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/linkedin_ai_apps.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/linkedin_ai_apps.png" alt="Building Apps with AI Tools preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Building Apps with AI Tools</h4>
+                    <p class="cert-card-meta">LinkedIn Learning • Feb 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 8 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/linkedin_prompt_eng_skills.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/linkedin_prompt_eng_skills.png" alt="Develop Prompt Engineering Skills preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Develop Prompt Engineering Skills</h4>
+                    <p class="cert-card-meta">LinkedIn Learning • Feb 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 9 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/linkedin_prompt_eng_talk.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/linkedin_prompt_eng_talk.png" alt="Prompt Engineering How to Talk to AIs preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">How to Talk to the AIs</h4>
+                    <p class="cert-card-meta">LinkedIn Learning • Feb 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 10 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/linkedin_azure_fundamentals.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/linkedin_azure_fundamentals.png" alt="Azure Fundamentals Cert Prep preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Azure Fundamentals Cert Prep</h4>
+                    <p class="cert-card-meta">LinkedIn Learning • Feb 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 11 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/nasscom_cybersecurity_scorecard.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/nasscom_cybersecurity_scorecard.png" alt="Cybersecurity Fundamentals Scorecard preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">NASSCOM Grade Scorecard</h4>
+                    <p class="cert-card-meta">NASSCOM FutureSkills Prime • Dec 2023</p>
+                  </div>
+                </div>
+
+                <!-- Cert 12 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/tcs_communication.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/tcs_communication.png" alt="TCS iON Communication Skills preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Communication Skills Certification</h4>
+                    <p class="cert-card-meta">TCS iON • Jan 2024</p>
+                  </div>
+                </div>
+
+                <!-- Cert 13 -->
+                <div class="cert-grid-card cert-card-trigger" data-cert-img="certifications/data_privacy_quiz.png">
+                  <div class="cert-card-img-wrapper img-zoom">
+                    <img src="certifications/data_privacy_quiz.png" alt="DSCI Data Privacy Certificate preview">
+                  </div>
+                  <div class="cert-card-info">
+                    <h4 class="cert-card-title">Data Privacy Awareness Cert</h4>
+                    <p class="cert-card-meta">DSCI & MyGov • Jan 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Banner Section -->
+      <section class="section section-connect-cta">
+        <div class="container connect-cta-container">
+          <h2 class="connect-title">Interested in connecting?</h2>
+          <p class="connect-subtitle">Let's talk projects, collaborations, or anything software!</p>
+          <a href="mailto:ds6panimalar@gmail.com" class="btn btn-connect">Email me</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         4. ABOUT VIEW SECTION
+         ========================================== -->
+    <div id="about-view" class="view-section">
+      <section class="section section-about-intro" id="about-intro-section">
+        <div class="container">
+          <h1 class="hero-heading">Who I am beyond Code</h1>
+
+          <div class="about-hero-layout reveal-on-scroll">
+            <div class="about-hero-img-wrapper img-zoom">
+              <img src="darwin_avatar.jpeg" alt="Darwin K smiling portrait" class="about-hero-img">
+            </div>
+            
+            <div class="about-hero-details">
+              <h2 class="about-hero-title">More than just writing code, I'm a logical puzzle-solver. I love taking complex, messy problems and turning them into neat, functional tools that help people get things done.</h2>
+              <p class="about-hero-text">When I'm not programming, I enjoy simple things: a well-crafted morning coffee, reading tech writeups, setting up local servers, and that quiet moment when a stubborn bug is finally fixed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Stack Exploration Section -->
+      <section class="section section-stack-exploration" style="background: var(--bg-card); border-top: var(--border-thin); border-bottom: var(--border-thin); padding: 80px 0;">
+        <div class="container">
+          <h2 class="section-title">My Tech Stack & Tools</h2>
+          <p class="section-subtitle">Here is a list of the applications, shells, and languages I use to build and automate systems.</p>
+          
+          <div class="stack-categories-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+            <!-- Cat 1 -->
+            <div class="stack-category reveal-on-scroll" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.15rem; margin-bottom:12px;">Core Development</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">Writing clean structural scripts and compiling backend processes.</p>
+              <div style="font-family: var(--font-headings); font-weight: 700; font-size: 0.8rem; color: var(--text-main); display: flex; flex-wrap: wrap; gap: 8px;">
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">JAVASCRIPT</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">JAVA</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">PYTHON</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">HTML5 & CSS3</span>
+              </div>
+            </div>
+            <!-- Cat 2 -->
+            <div class="stack-category reveal-on-scroll reveal-delay-1" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.15rem; margin-bottom:12px;">System Shells & Git</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">Configuring local command lines, scripting tasks, and managing repos.</p>
+              <div style="font-family: var(--font-headings); font-weight: 700; font-size: 0.8rem; color: var(--text-main); display: flex; flex-wrap: wrap; gap: 8px;">
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">LINUX BASH</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">GIT & GITHUB</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">VS CODE</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">TERMINAL SETUPS</span>
+              </div>
+            </div>
+            <!-- Cat 3 -->
+            <div class="stack-category reveal-on-scroll reveal-delay-2" style="padding: 24px; border: var(--border-thin); border-radius: var(--radius-md); background: var(--bg-body);">
+              <h4 style="font-family: var(--font-headings); font-weight:700; font-size:1.15rem; margin-bottom:12px;">Cloud AI & Platforms</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">Exploring large language models, prompt chains, and platform APIs.</p>
+              <div style="font-family: var(--font-headings); font-weight: 700; font-size: 0.8rem; color: var(--text-main); display: flex; flex-wrap: wrap; gap: 8px;">
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">OCI GEN AI</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">PROMPT CHAINS</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">SERVICENOW</span>
+                <span style="background: #e0e0e0; padding: 4px 8px; border-radius: 4px;">AZURE CLOUD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inspirations Section -->
+      <section class="section section-inspirations" id="inspirations-section">
+        <div class="container">
+          <h2 class="section-title">My inspirations and interests</h2>
+          <div class="inspirations-intro-grid reveal-on-scroll">
+            <p class="inspiration-intro-text">I find inspiration in modern, minimalist workspaces, well-written code documentation, and the collaborative energy of hackathons.</p>
+            <p class="inspiration-intro-text">I enjoy keeping up with cloud advancements, testing open-source security tools, and seeing how artificial intelligence can make daily tasks easier.</p>
+          </div>
+
+          <div class="inspirations-masonry-grid reveal-on-scroll">
+            <div class="masonry-item img-zoom">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&h=600&q=80" alt="Clean modern developer workspace setup">
+            </div>
+            <div class="masonry-item img-zoom">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&h=600&q=80" alt="Sleek academic library workspace">
+            </div>
+            <div class="masonry-item img-zoom">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&h=600&q=80" alt="Cybersecurity command shell setup">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Looking Ahead -->
+      <section class="section section-looking-ahead" id="looking-ahead-section">
+        <div class="container">
+          <h2 class="section-title">Looking ahead</h2>
+          <div class="looking-ahead-grid reveal-on-scroll">
+            <div class="ahead-column">
+              <p class="ahead-text">I'm excited about the future of web interfaces. I want to build systems that integrate AI assistants natively, making user journeys smoother and more personal.</p>
+            </div>
+            <div class="ahead-column">
+              <p class="ahead-text">I want to work on projects that place data security first. Building systems that are both highly secure and easy for everyday people to use is my ultimate goal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Banner Section -->
+      <section class="section section-connect-cta">
+        <div class="container connect-cta-container">
+          <h2 class="connect-title">Interested in connecting?</h2>
+          <p class="connect-subtitle">Let's talk projects, collaborations, or anything software!</p>
+          <a href="mailto:ds6panimalar@gmail.com" class="btn btn-connect">Email me</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Darwin K.</span>
+        <div class="footer-links">
+          <button class="nav-btn" data-target="home">Home</button>
+          <button class="nav-btn" data-target="projects">Projects</button>
+          <button class="nav-btn" data-target="resume">Resume</button>
+          <button class="nav-btn" data-target="about">About</button>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social-icons">
+          <a href="https://linkedin.com/in/darwin-surya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/darwinsurya" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:ds6panimalar@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">Copyright © 2026 Darwin K. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay (Modal) -->
+  <div class="lightbox" id="lightbox-overlay" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Certificate View" class="lightbox-img" id="lightbox-image">
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Menu Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="close-overlay" id="close-overlay-btn">&times;</button>
+    <div class="mobile-nav-links">
+      <button class="mobile-nav-link nav-btn" data-target="home">Home</button>
+      <button class="mobile-nav-link nav-btn" data-target="projects">Projects</button>
+      <button class="mobile-nav-link nav-btn" data-target="resume">Resume</button>
+      <button class="mobile-nav-link nav-btn" data-target="about">About me</button>
+      <a href="mailto:ds6panimalar@gmail.com" class="btn btn-mobile-cta">Email me</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
