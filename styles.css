@@ -1161,8 +1161,8 @@ img {
     margin-bottom: 40px;
   }
   
-  .projects-grid, .certs-visual-grid {
-    grid-template-columns: 1fr;
+  .projects-grid, .certs-visual-grid, .competencies-grid, .principles-grid, .stack-categories-grid {
+    grid-template-columns: 1fr !important;
   }
   
   .feedback-card {
